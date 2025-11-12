@@ -1,0 +1,25 @@
+
+.count-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.count-container .count-button {
+    background-color: #827070;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.count-container .count-button:hover {
+    background-color: #cc0000;
+}
+.count-container .count-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fcf4f4;
+}

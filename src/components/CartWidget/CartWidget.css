@@ -1,0 +1,24 @@
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  color: #e70c0c;
+}
+.cart-widget {
+  position: relative;
+  display: inline-block;
+}
+.cart-widget:hover .cart-icon {
+  color: #555;
+}
+butto-cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}   
+button-cart:focus {
+  outline: none;
+}
+button-cart:hover .cart-icon {
+  color: #ff0000;
+}
