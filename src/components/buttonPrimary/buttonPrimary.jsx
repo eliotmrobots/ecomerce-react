@@ -3,7 +3,7 @@ import "./buttonPrimary.css";
 
 function buttonPrimary({ children , onClick }) {
   return (
-    <button className="button-primary" onClick={onClick}>
+    <button className="inicio-button" onClick={onClick}>
       {children}
     </button>
   );

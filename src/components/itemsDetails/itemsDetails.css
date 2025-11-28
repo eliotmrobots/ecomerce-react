@@ -1,9 +1,10 @@
 
 .item-card {
+    width: 100%;
     height: auto;
      background-color: #000000;
     border-radius: 8px;
-    border: 5px solid #ff0000;
+     border: 5px solid #ff0000;
     box-shadow: 0 0 10px #ff0000, 0 0 20px #ff1414;
     padding: 15px;
     display: flex;

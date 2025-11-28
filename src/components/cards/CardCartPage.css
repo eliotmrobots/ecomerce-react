@@ -1,0 +1,23 @@
+
+.card-cart-page-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    border: 3px solid #151515;
+    border-radius: 8px;
+    border-bottom: 3px solid #151515;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #f0f0f0;
+}
+.card-cart-page-image {
+    margin-bottom: 12px;
+}
+.card-cart-page-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #333;
+}

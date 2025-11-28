@@ -1,14 +1,16 @@
 
-.button-primary {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+.inicio-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #ff0800a5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff1414;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
-.button-primary:hover {
-  background-color: #0056b3;
+.inicio-button:hover {
+    background-color: #e60000;
+    box-shadow: 0 0 8px #e60000, 0 0 15px #ff1a1a;
 }

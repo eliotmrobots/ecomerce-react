@@ -13,8 +13,8 @@ function NavBar() {
       
         <ul className='links'>
           <li className='link'><Link to="/">Inicio</Link></li>
-          <li className='link'><Link to="/products">Productos</Link></li>
-          <li className='link'><Link to="/contact">Contacto</Link></li>
+          <li className='link'><Link to="/productos">Productos</Link></li>
+          <li className='link'><Link to="/contacto">Contacto</Link></li>
         </ul>
         <CartWidget />
       </nav>
