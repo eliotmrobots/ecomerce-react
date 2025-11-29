@@ -6,20 +6,36 @@ export default function CartProvider({ children }) {
    
     const [cart, setCart] = useState([]);
 
-  const addCartProduct = (newProduct) => {
-    const exists = cart.some(product => product.id === newProduct.id);
+    const addCartProduct = (newProduct) => {
+    const exists = cart.find(product => product.id === newProduct.id);
+    
     if (exists) {
+      const newQuantity = exists.quantity + newProduct.quantity;
+      
+      // Validar que no exceda el stock
+      if (newQuantity > newProduct.stock) {
+        alert(`No puedes agregar más de ${newProduct.stock} unidades de ${newProduct.name}`);
+        return;
+      }
+      
       setCart(cart.map(product => {
         if (product.id === newProduct.id) {
           return {
             ...product,
-            quantity: product.quantity + newProduct.quantity
+            quantity: newQuantity
           };
         }
         return product;
       }));
       return;
     }
+    
+    // Si es nuevo, validar que la cantidad no exceda el stock
+    if (newProduct.quantity > newProduct.stock) {
+      alert(`Solo hay ${newProduct.stock} unidades disponibles`);
+      return;
+    }
+    
     setCart([...cart, newProduct]);
   }
 
@@ -38,8 +54,12 @@ export default function CartProvider({ children }) {
     }));
   }
 
+  const clearCart = () => {
+    setCart([]);
+  }
+
     return (
-        <CartContext.Provider value={{ cart, addCartProduct, deteleProduct, updateQuantity }}>
+        <CartContext.Provider value={{ cart, addCartProduct, deteleProduct, updateQuantity, clearCart }}>
             {children}
         </CartContext.Provider>
     )

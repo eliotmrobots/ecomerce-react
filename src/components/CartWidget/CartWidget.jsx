@@ -1,14 +1,17 @@
 import "./CartWidget.css";
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router";
-import { useContext } from 'react';
-import { CartContext } from '../Contex/cartContex.jsx';
+import { useContext } from "react";
+import { CartContext } from "../Context/cartContext.jsx";
 
 function CartWidget() {
   const { cart } = useContext(CartContext);
-  
-  // Calcula el total de productos sumando todas las cantidades
-  const totalQuantity = cart.reduce((total, product) => total + product.quantity, 0);
+
+  // Calcula el total de productos
+  const totalQuantity = cart.reduce(
+    (total, product) => total + product.quantity,
+    0
+  );
 
   return (
     <>
@@ -19,7 +22,7 @@ function CartWidget() {
         )}
       </Link>
     </>
-  )
+  );
 }
 
 export default CartWidget;

@@ -1,9 +1,9 @@
 
 import { useContext } from "react";
-import { CartContext } from '../Contex/cartContex.jsx';
-import CardCart from "../cards/CardCart.jsx";
-import CardCartPage from "../cards/cardCartPage.jsx";
-import CardCartFinal from "../cards/cardCartFinal.jsx";
+import { CartContext } from '../Context/cartContext.jsx';
+import CardCart from "../Cards/CardCart.jsx";
+import CardCartPage from "../Cards/CardCartPage.jsx";
+import CardCartFinal from "../Cards/CardCartFinal.jsx";
 
 
 function CartDetails() {

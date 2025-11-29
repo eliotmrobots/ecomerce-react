@@ -1,6 +1,6 @@
 
 import "./itemListContainer.css";
-import ItemsDetails from "../itemsDetails/itemsDetails.jsx";
+import ItemsDetails from "../ItemsDetails/ItemsDetails.jsx";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/config.js";

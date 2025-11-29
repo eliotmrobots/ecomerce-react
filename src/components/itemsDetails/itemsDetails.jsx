@@ -1,5 +1,5 @@
 import "./itemsDetails.css";
-import CardsProducts from "../cards/cards-products.jsx";
+import CardsProducts from "../Cards/CardsProducts.jsx";
 
 
 

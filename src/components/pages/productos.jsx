@@ -1,8 +1,12 @@
-import ItemListContainer from "../itemListContainer/ItemListContainer.jsx";
+
+import ItemListContainer from "../itemListContainer/itemListContainer.jsx";
 
 function Productos () {
     return (
+        <>
         <ItemListContainer />
+
+        </>
     )
 }
 

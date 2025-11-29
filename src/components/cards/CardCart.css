@@ -45,3 +45,9 @@
     color: #666;
     margin: 8px 0 16px 0;
 }
+.card-cart-stock {
+    display: block;
+    font-size: 0.95rem;
+    color: #805300;
+    margin: 8px 0;
+}

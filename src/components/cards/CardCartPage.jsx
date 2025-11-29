@@ -1,4 +1,4 @@
-import './CardCartPage.css';
+import './cardCartPage.css';
 import { useNavigate } from 'react-router';
 function CardCartPage() {
     const navigate = useNavigate();

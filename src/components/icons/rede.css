@@ -1,0 +1,22 @@
+.redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.redes-icon {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+.redes-icon:hover {
+    transform: scale(1.2);
+    color: #ff0000;
+}.redes-icon:active {
+    transform: scale(0.9);
+}
+.redes-link {
+    text-decoration: none;
+}

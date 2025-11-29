@@ -1,10 +1,10 @@
-import InicioPg from '../inicio/inicioPg.jsx';
+import InicioPg from '../Inicio/InicioPg.jsx';
 
 function Inicio () {
     return (
         <>
           <InicioPg />
-
+          
         </>
     )
 }
